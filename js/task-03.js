@@ -28,22 +28,22 @@ ulElement.insertAdjacentHTML('afterbegin', liItems.join(''));
 
 //--------------
 
-const makePhotos = (images) => {
-  return images.map((element) => {
-    const liElem = document.createElement('li');
-    const imgElem = document.createElement('img');
+// const makePhotos = (images) => {
+//   return images.map((element) => {
+//     const liElem = document.createElement('li');
+//     const imgElem = document.createElement('img');
 
-    liElem.classList.add('item');
-    liElem.appendChild(imgElem);
-    // console.log(liElem);
+//     liElem.classList.add('item');
+//     liElem.appendChild(imgElem);
+//     // console.log(liElem);
 
-    imgElem.classList.add('item__img');
-    imgElem.src = element.url;
-    imgElem.alt = element.alt;
+//     imgElem.classList.add('item__img');
+//     imgElem.src = element.url;
+//     imgElem.alt = element.alt;
 
-    return liElem;
-  });
-};
+//     return liElem;
+//   });
+// };
 
 // const liItems = makePhotos(images);
 // console.log(...liItems);
