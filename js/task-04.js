@@ -1,11 +1,12 @@
 const counterValue = document.querySelector('#value');
-console.log(counterValue);
+
 let count = 0;
 const decrement = document.querySelector('button[data-action="decrement"]');
 const increment = document.querySelector('button[data-action="increment"]');
 
-function innerHTML(num) {
-  counterValue.innerHTML = num;
+function changeCounter(num) {
+  // counterValue.innerHTML = num;
+  counterValue.textContent = num;
 }
 
 // const addition = () => {
@@ -21,11 +22,11 @@ function innerHTML(num) {
 
 function subtraction() {
   count -= 1;
-  innerHTML(count);
+  changeCounter(count);
 }
 function addition() {
   count += 1;
-  innerHTML(count);
+  changeCounter(count);
 }
 //-----------------
 decrement.addEventListener('click', subtraction);
