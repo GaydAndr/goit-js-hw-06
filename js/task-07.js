@@ -4,6 +4,10 @@ const txtSpan = document.querySelector('#text');
 inputValue.addEventListener('input', changeFontSize);
 
 function changeFontSize() {
-  // console.log(inputValue.value);
+  // 1
   txtSpan.style.fontSize = `${inputValue.value}px`;
 }
+
+// function changeFontSize(event) {  // 2
+//   txtSpan.style.fontSize = `${event.target.value}px`;
+// }
