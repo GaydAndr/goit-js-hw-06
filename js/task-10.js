@@ -32,14 +32,16 @@ function watchInput() {
 }
 
 function createBoxes(amount) {
+  // console.log(amount);
   if (amount > 100) {
     alert('Too much');
     return;
   }
-  // console.log(amount);
+
   let divs = [];
   let width = 30;
   let height = 30;
+
   for (let i = 0; i < amount; i += 1) {
     const divEl = document.createElement('div');
     const color = getRandomHexColor();
